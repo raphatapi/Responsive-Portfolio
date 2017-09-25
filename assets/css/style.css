@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0 auto;  
+}
+
+body {
+  background-image: url("../images/vintage-concrete.png");
+}
+
+h1 {
+  color: white;
+  font-size: 25px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h2,h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+}
+
+p {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.75;
+}
+
+/* Navigation Bar with Logo*/
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 71px;
+  z-index: 99;
+  background-color: #ffffff;
+  border-bottom: solid 2px #cccccc;
+}
+
+.menu-wrap {
+  width: 960px;
+  margin: auto;
+}
+
+.logo {
+  float: left;
+  position: absolute;
+  width: 250px;
+  height: 70px;
+}
+
+.logo a {
+  display: inline-block;
+  background-color: #4aaaa5;
+  padding: 0 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.logo a:hover {
+  background-color: #43876e;
+  color: white;
+  padding: 0 15px;
+  transition:.33s linear;
+}
+
+/*Create navigation bar*/
+.topnav {
+  float: right;
+  padding-top: 10px; 
+}
+
+/* Style the links inside the navigation bar*/
+.topnav a {
+  float: right;
+  color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #6b674c;
+  color: white;
+  transition:.33s linear;
+}
+
+/* Add a color to the active/current link*/
+.topnav a.active {
+  background-color: #43876e;
+  color: white;
+}
+
+.main-wrap {
+  margin: 100px auto 50px auto;
+  width: 960px;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.main_content {
+  float: left;
+  background-color: #ffffff;
+  width: 650px;
+  padding: 5px 19px;
+  border: solid 1px #ddd;
+}
+
+.main_title {
+  border-bottom: solid 2px #cccccc;
+}
+
+#about_picture {
+  float: left;
+  padding-right: 15px;
+  width: 205px;
+  height: 250px;
+}
+
+.connect {
+  float: right;
+  background-color: #ffffff;
+  padding: 5px 19px;
+  width: 270px;
+  border: solid 1px #ddd;
+}
+
+.connect_title {
+  border-bottom: solid 2px #cccccc;
+}
+
+.social {
+  padding: 15px 5px;
+  display: inline-block;
+}
+
+.social_icon {
+  width: 55px;
+  height: 55px;
+}
+
+footer {
+  clear: both;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  
+}
+
+.copyright {
+  border-top: solid 5px #43876e;
+  color: #cccccc;
+  background: #666666;
+  transition:.33s linear;
+  text-align: center;
+  font-size: small;
+  padding: 15px;
+}
+
+/* Change the color of background on hover */
+.copyright:hover {
+  background: #6b674c;
+}
+
+/*PORTFOLIO STARTS HERE*/
+
+.column {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.gallery {
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.pics {
+  overflow: hidden;
+  width: 100%;
+}
+
+.pics:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.tag {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  background-color: #90daca;
+  color: white;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.tag a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CONTACT STARTS HERE*/
+.container {
+  padding: 20px 0;
+}
+
+label {
+  color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input[type=text], textarea{
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline:none;
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #777777;
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 980px) {
+  body {
+  background-image: url("../images/canyon.jpg");
+  }  
+
+  .logo, .topnav {
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 0;
+    padding: 0 70px;
+  }
+
+  .topnav {
+    padding-right: 90px;
+  }
+
+  .main-wrap {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .main_content, .connect {
+    width: 100%;
+  }
+
+  .connect {
+    margin-top: 40px;
+  }
+}
+   /*.main_content, .connect{
+    width: 100%;
+  }*/
+
+  /*.main_content {
+  clear: both;
+  float: left;
+  background-color: #ffffff;
+  width: 610px;
+  padding: 5px 19px;
+  margin: 40px 0 40px 110px;
+  border: solid 1px #ddd;
+  }
+
+  .main_title {
+    border-bottom: solid 2px #cccccc;
+  }
+
+  #about_picture {
+    float: left;
+    padding-right: 10px;
+    width: 200px;
+    height: 250px;
+  }
+}*/
+
+/*@media screen and (max-width: 768px) {
+  .main-wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main-wrap {
+    width: 100%;
+  }
+}*/
