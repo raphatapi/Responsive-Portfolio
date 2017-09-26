@@ -297,10 +297,6 @@ input[type=submit]:hover {
   column-count: 1;
   margin: 0;
   }
-
-  /*.main_title, .connect_title, .social {
-    text-align: center;
-  }*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -355,6 +351,7 @@ input[type=submit]:hover {
   .menu-wrap {
     /*margin: 0;*/
     padding: 0;
+    border: 0;
   }
 
   .topnav {
