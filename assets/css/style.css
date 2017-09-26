@@ -117,7 +117,7 @@ p {
 #about_picture {
   float: left;
   padding-right: 15px;
-  width: 205px;
+  width: 380px;
   height: 250px;
 }
 
@@ -130,12 +130,12 @@ p {
 }
 
 .connect_title {
+  margin: 0 auto;
   border-bottom: solid 2px #cccccc;
 }
 
 .social {
   padding: 15px 5px;
-  display: inline-block;
 }
 
 .social_icon {
@@ -256,22 +256,58 @@ input[type=submit]:hover {
 
 /* MEDIA QUERIES*/
 
-@media screen and (max-width: 980px) {
-  body {
-  background-image: url("../images/canyon.jpg");
-  }  
-
-  .logo, .topnav {
+@media only screen and (max-width: 980px) {
+  
+  .menu-wrap {
     width: 100%;
+    padding: 0 100px;
   }
 
-  .logo {
-    margin-left: 0;
-    padding: 0 70px;
+  .logo a {
+    padding: 0 15px;
   }
 
-  .topnav {
-    padding-right: 90px;
+  .main-wrap {
+    width: 100%;
+    padding: 15px 100px;
+  }
+
+  .main_content {
+    width: 480px;
+  }
+
+  #about_picture {
+    width: 100%;
+    height: 320px;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .connect {
+    width: 230px;
+  }
+
+  .social {
+    text-align: center;
+  }
+
+  .column {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+  margin: 0;
+  }
+
+  /*.main_title, .connect_title, .social {
+    text-align: center;
+  }*/
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .menu-wrap {
+    width: 100%;
+    padding: 0 20px;
   }
 
   .main-wrap {
@@ -283,44 +319,83 @@ input[type=submit]:hover {
     width: 100%;
   }
 
+  #about_picture {
+  width: 380px;
+  height: 250px;
+  padding-right: 15px;
+  }
+
   .connect {
     margin-top: 40px;
   }
-}
-   /*.main_content, .connect{
-    width: 100%;
-  }*/
 
-  /*.main_content {
-  clear: both;
-  float: left;
-  background-color: #ffffff;
-  width: 610px;
-  padding: 5px 19px;
-  margin: 40px 0 40px 110px;
-  border: solid 1px #ddd;
+  .social {
+    text-align: left;
   }
 
-  .main_title {
-    border-bottom: solid 2px #cccccc;
-  }
-
-  #about_picture {
-    float: left;
-    padding-right: 10px;
-    width: 200px;
-    height: 250px;
-  }
-}*/
-
-/*@media screen and (max-width: 768px) {
-  .main-wrap {
-    width: 100%;
+  .column {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  margin: 0;
+  padding: 0 0 20px 0;
   }
 }
 
 @media screen and (max-width: 640px) {
-  .main-wrap {
+
+  .fixed-menu {
+    position: static;
+    background-color: #4aaaa5;
+  }
+
+  .menu-wrap {
+    /*margin: 0;*/
+    padding: 0;
+  }
+
+  .topnav {
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    padding-right: 55px;
+    border-bottom: solid 2px #cccccc;
+  }
+
+  .topnav a {
+    width: 30%;
+    text-align: center;
+  }
+
+  .logo {
+    position: inherit;
+    text-align: center;
     width: 100%;
   }
-}*/
+
+  .logo a:hover {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+  .main-wrap {
+    padding-top: 0;
+  }
+
+  #about_picture {
+    width: 100%;
+    height: 340px;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .column {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+  margin: 0;
+  }
+}
