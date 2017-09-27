@@ -346,12 +346,12 @@ input[type=submit]:hover {
   .fixed-menu {
     position: static;
     background-color: #4aaaa5;
+    border-bottom: 0;
   }
 
   .menu-wrap {
     /*margin: 0;*/
     padding: 0;
-    border: 0;
   }
 
   .topnav {
