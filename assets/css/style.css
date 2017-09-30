@@ -256,11 +256,11 @@ input[type=submit]:hover {
 
 /* MEDIA QUERIES*/
 
-@media only screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
   
   .menu-wrap {
     width: 100%;
-    padding: 0 100px;
+    padding: 0 20px;
   }
 
   .logo a {
@@ -269,22 +269,26 @@ input[type=submit]:hover {
 
   .main-wrap {
     width: 100%;
-    padding: 15px 100px;
+    padding: 15px 20px;
   }
 
   .main_content {
-    width: 480px;
+    width: 67.7%;
   }
 
   #about_picture {
-    width: 100%;
-    height: 320px;
-    padding-right: 0;
-    padding-bottom: 15px;
+    height: auto;
+    padding-right: 10px;
+    padding-bottom: 10px;
   }
 
   .connect {
-    width: 230px;
+    width: 28.1%;
+    padding: 5px;
+  }
+
+  .connect_title {
+    padding: 0 10px;
   }
 
   .social {
@@ -299,7 +303,7 @@ input[type=submit]:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   
   .menu-wrap {
     width: 100%;
